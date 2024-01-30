@@ -9,8 +9,8 @@
 #include <float.h>
 #include <string.h>
 
-#include "../mtxlib/initShader.h"
 #include "../mtxlib/mtx.h"
+#include "../shaders/initShader.h"
 
 #define BUFFER_OFFSET( offset )   ((GLvoid*) (offset))
 
@@ -862,7 +862,8 @@ void init(void) {
     printf("\n-- Plane Movement --\n\ne or E: Move Plane Up\nw or W: Move Plane Down\n");
     printf("\n-- Other --\n\nq or Q: Quit\n\n");
 
-    GLuint program = initShader("vshader.glsl", "fshader.glsl");
+    // GLuint program = initShader("vshader.glsl", "fshader.glsl");
+    GLuint program = initShaderDefault();
     glUseProgram(program);
 
     int param;

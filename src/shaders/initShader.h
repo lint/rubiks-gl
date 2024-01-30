@@ -18,6 +18,8 @@ struct Shader
     GLchar*      source;
 };
 
-GLuint initShader(const char* vertexShaderFile, const char* fragmentShaderFile);
+GLuint initShaderFile(const char* vertexShaderFile, const char* fragmentShaderFile);
+GLuint initShaderDefault();
+GLuint initShader(struct Shader *shaders);
 
 #endif
