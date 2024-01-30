@@ -3,6 +3,8 @@
 
 Rubiks-gl is an OpenGL application written in C that presents a virtual interactable Rubik's Cube. It features several controls for the cube such as rotating each of its faces or automatically generating and applying a scramble. Additionally, there are controls to move the camera, light source, and background plane. 
 
+![Screenshot of a scrambled Rubik's cube created using Rubik-gl](https://i.imgur.com/oGdDarn.png)
+
 ### Building and Running
 
 1. Install the required development tools, libraries, and OpenGL packages
